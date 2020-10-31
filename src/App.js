@@ -1,8 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import Layout from "./components/Layout";
 import Grid from "./components/Grid";
-import ImgSection from "./components/ImgSection";
 import ImgCard from "./components/ImgCard";
+import Section from "./components/Section";
+import Scalable from "./components/Scalable";
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -68,40 +69,49 @@ function App() {
             text="Available now"
           />
         </Grid>
-        <ImgSection
+        <Scalable
           backgroundColor="#ea0001"
           backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/new-releases/1180x500_NewReleases_Switch_7_2020_v01.jpg"
-          link="https://foxmail.com"
         >
-          <ImgSection.Text>
-            <h1>New</h1>
-            <b>Releases</b>
-            <p>See the newest games for Nntendo Switch.</p>
-          </ImgSection.Text>
-        </ImgSection>
-        <Grid cols={2} style={{ marginTop: "5px" }}>
-          <ImgSection
+          <Section full>
+            <Section.Text title>New</Section.Text>
+            <Section.Text title bold>
+              Releases
+            </Section.Text>
+            <Section.Text>
+              See the newest games for Nintendo Switch.
+            </Section.Text>
+          </Section>
+        </Scalable>
+        <Grid cols={2}>
+          <Scalable
             backgroundColor="#0126d7"
             backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/best-sellers/585x420_BestSellers_12_2019_CuratedListPromo_v02.jpg"
-            link="https://foxmail.com"
           >
-            <ImgSection.Text>
-              <h1>New</h1>
-              <b>Releases</b>
-              <p>See the newest games for Nntendo Switch.</p>
-            </ImgSection.Text>
-          </ImgSection>
-          <ImgSection
+            <Section half>
+              <Section.Text title>Best-Selling</Section.Text>
+              <Section.Text title bold>
+                Games
+              </Section.Text>
+              <Section.Text>
+                Find out which games are most popular with fans.
+              </Section.Text>
+            </Section>
+          </Scalable>
+          <Scalable
             backgroundColor="#782769"
             backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/indie-games/585x420_indie_CuratedListPromo_v02.jpg"
-            link="https://foxmail.com"
           >
-            <ImgSection.Text>
-              <h1>New</h1>
-              <b>Releases</b>
-              <p>See the newest games for Nntendo Switch.</p>
-            </ImgSection.Text>
-          </ImgSection>
+            <Section half>
+              <Section.Text title>Indie</Section.Text>
+              <Section.Text title bold>
+                Games
+              </Section.Text>
+              <Section.Text>
+                Spotlight on some of the hottest indie games.
+              </Section.Text>
+            </Section>
+          </Scalable>
         </Grid>
       </Layout>
     </>
