@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Layout from "./components/Layout";
 import Grid from "./components/Grid";
+import ImgSection from "./components/ImgSection";
 import ImgCard from "./components/ImgCard";
 
 const GlobalStyle = createGlobalStyle`
@@ -67,7 +68,41 @@ function App() {
             text="Available now"
           />
         </Grid>
-        <ImgCard src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/new-releases/1180x500_NewReleases_Switch_7_2020_v01.jpg" />
+        <ImgSection
+          backgroundColor="#ea0001"
+          backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/new-releases/1180x500_NewReleases_Switch_7_2020_v01.jpg"
+          link="https://foxmail.com"
+        >
+          <ImgSection.Text>
+            <h1>New</h1>
+            <b>Releases</b>
+            <p>See the newest games for Nntendo Switch.</p>
+          </ImgSection.Text>
+        </ImgSection>
+        <Grid cols={2} style={{ marginTop: "5px" }}>
+          <ImgSection
+            backgroundColor="#0126d7"
+            backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/best-sellers/585x420_BestSellers_12_2019_CuratedListPromo_v02.jpg"
+            link="https://foxmail.com"
+          >
+            <ImgSection.Text>
+              <h1>New</h1>
+              <b>Releases</b>
+              <p>See the newest games for Nntendo Switch.</p>
+            </ImgSection.Text>
+          </ImgSection>
+          <ImgSection
+            backgroundColor="#782769"
+            backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/indie-games/585x420_indie_CuratedListPromo_v02.jpg"
+            link="https://foxmail.com"
+          >
+            <ImgSection.Text>
+              <h1>New</h1>
+              <b>Releases</b>
+              <p>See the newest games for Nntendo Switch.</p>
+            </ImgSection.Text>
+          </ImgSection>
+        </Grid>
       </Layout>
     </>
   );
