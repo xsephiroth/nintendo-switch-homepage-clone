@@ -4,6 +4,7 @@ import Grid from "./components/Grid";
 import Section from "./components/Section";
 import Scalable from "./components/Scalable";
 import Overlay from "./components/Overlay";
+import ComingSoon from "./components/ComingSoon";
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -253,6 +254,7 @@ function App() {
             </Section.Text>
           </Section>
         </Scalable>
+        <ComingSoon />
       </Layout>
     </>
   );
