@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import Layout from "./components/Layout";
 import Grid from "./components/Grid";
-import ImgCard from "./components/ImgCard";
 import Section from "./components/Section";
 import Scalable from "./components/Scalable";
+import Overlay from "./components/Overlay";
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -22,52 +22,38 @@ function App() {
       <GlobalStyle />
       <Layout>
         <Grid cols={2}>
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/paper-mario-and-the-origami-king/712x400_PMO_GameStoreHalf_v01.jpg"
-            text="Available now"
-            text2X
-            esrbLogo
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/animal-crossing-new-horizons/712x400_ACNH_GameStoreHalf_v01.jpg"
-            text="Available now"
-            text2X
-            esrbLogo
-          />
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/paper-mario-and-the-origami-king/712x400_PMO_GameStoreHalf_v01.jpg">
+            <Overlay text="Available now" esrbLogo />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/animal-crossing-new-horizons/712x400_ACNH_GameStoreHalf_v01.jpg">
+            <Overlay text="Available now" esrbLogo />
+          </Scalable>
         </Grid>
         <Grid cols={4}>
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/pokemon-sword-and-shield/354x198_PSword_GameStoreQuarter_v01.jpg"
-            text="DLC available now"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/pokemon-sword-and-shield/354x198_PShield_GameStoreQuarter_v01.jpg"
-            text="DLC available now"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/fortnite-nexus-war/354x198_gs_fortnite_nexuswar.jpg"
-            text="New Season"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/super-smash-bros-ultimate/354x198_Smash_GameStoreQuarter_v02.jpg"
-            text="Available now"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/breath-of-the-wild/354x198_ZeldaBreathofWild_v01.jpg"
-            text="Available now"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/super-mario-party/354x198_SuperMarioParty_goldPoints_GameStoreQuarter_noRibbon.jpg"
-            text="Available now"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/xenoblade-chronicles/354x198_GameStoreQuarter_x.jpg"
-            text="Available now"
-          />
-          <ImgCard
-            src="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/club-house-games/354x198__GameStoreQuarter_games.jpg"
-            text="Available now"
-          />
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/pokemon-sword-and-shield/354x198_PSword_GameStoreQuarter_v01.jpg">
+            <Overlay mini text="DLC Available now" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/pokemon-sword-and-shield/354x198_PShield_GameStoreQuarter_v01.jpg">
+            <Overlay mini text="DLC available now" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/fortnite-nexus-war/354x198_gs_fortnite_nexuswar.jpg">
+            <Overlay mini text="New Season" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/super-smash-bros-ultimate/354x198_Smash_GameStoreQuarter_v02.jpg">
+            <Overlay mini text="Available now" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/breath-of-the-wild/354x198_ZeldaBreathofWild_v01.jpg">
+            <Overlay mini text="Available now" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/super-mario-party/354x198_SuperMarioParty_goldPoints_GameStoreQuarter_noRibbon.jpg">
+            <Overlay mini text="Available now" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/xenoblade-chronicles/354x198_GameStoreQuarter_x.jpg">
+            <Overlay mini text="Available now" />
+          </Scalable>
+          <Scalable backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/switch/club-house-games/354x198__GameStoreQuarter_games.jpg">
+            <Overlay mini text="Available now" />
+          </Scalable>
         </Grid>
         <Scalable
           backgroundColor="#ea0001"

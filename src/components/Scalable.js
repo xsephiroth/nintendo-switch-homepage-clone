@@ -5,6 +5,10 @@ const StyledContainer = styled.div`
   overflow: hidden;
 
   background-color: ${(props) => props.backgroundColor};
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const StyledBackground = styled.div`
@@ -31,11 +35,18 @@ const StyledMain = styled.main`
   position: relative;
 `;
 
-const Scalable = ({ children, backgroundImage, backgroundColor }) => {
+const Scalable = ({
+  children,
+  backgroundImage,
+  backgroundColor,
+  link = "https://www.nintendo.com/games/switch/",
+}) => {
   return (
     <StyledContainer backgroundColor={backgroundColor}>
       <StyledBackground backgroundImage={backgroundImage} />
-      <StyledMain>{children}</StyledMain>
+      <a href={link} target="_blank">
+        <StyledMain>{children}</StyledMain>
+      </a>
     </StyledContainer>
   );
 };
