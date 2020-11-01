@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
 
   padding: 0 5em;
 
-  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/merchandising/coming-soon/bravely-default/1440x400_Template_ComingSoon_v01.jpg);
+  background-image: url("https://www.nintendo.com/content/dam/noa/en_US/merchandising/coming-soon/bravely-default/1440x400_Template_ComingSoon_v01.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,8 +73,8 @@ const ComingSoon = () => {
   return (
     <StyledContainer>
       <StyledSection>
-        <Section.Text title>Coming</Section.Text>
-        <Section.Text title bold>
+        <Section.Text main>Coming</Section.Text>
+        <Section.Text main bold>
           Soon
         </Section.Text>
         <Section.Text>Check out upcoming game releases.</Section.Text>

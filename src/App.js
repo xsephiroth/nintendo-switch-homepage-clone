@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import SectionHeader from "./components/SectionHeader";
 import Layout from "./components/Layout";
 import Grid from "./components/Grid";
 import Section from "./components/Section";
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <SectionHeader />
       <Layout>
         <Container>
           <Grid cols={2}>
@@ -67,8 +69,8 @@ function App() {
             backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/new-releases/1180x500_NewReleases_Switch_7_2020_v01.jpg"
           >
             <Section full>
-              <Section.Text title>New</Section.Text>
-              <Section.Text title bold>
+              <Section.Text main>New</Section.Text>
+              <Section.Text main bold>
                 Releases
               </Section.Text>
               <Section.Text>
@@ -84,8 +86,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/best-sellers/585x420_BestSellers_12_2019_CuratedListPromo_v02.jpg"
             >
               <Section half>
-                <Section.Text title>Best-Selling</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Best-Selling</Section.Text>
+                <Section.Text main bold>
                   Games
                 </Section.Text>
                 <Section.Text>
@@ -98,8 +100,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/indie-games/585x420_indie_CuratedListPromo_v02.jpg"
             >
               <Section half>
-                <Section.Text title>Indie</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Indie</Section.Text>
+                <Section.Text main bold>
                   Games
                 </Section.Text>
                 <Section.Text>
@@ -112,8 +114,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/family-fun-at-home/585x420_together_CuratedListPromo_v02.jpg"
             >
               <Section half>
-                <Section.Text title>Family Fun at</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Family Fun at</Section.Text>
+                <Section.Text main bold>
                   Home
                 </Section.Text>
                 <Section.Text>
@@ -126,8 +128,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/play-together-online/585x420_Online_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Play Together</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Play Together</Section.Text>
+                <Section.Text main bold>
                   Online
                 </Section.Text>
                 <Section.Text>
@@ -141,8 +143,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/games-for-core-gamers/585x420_AC_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Games for</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Games for</Section.Text>
+                <Section.Text main bold>
                   Core Gamers
                 </Section.Text>
                 <Section.Text>
@@ -156,8 +158,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/games-9-99-and-under/585x420_999games2020_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Nintendo Switch Games</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Nintendo Switch Games</Section.Text>
+                <Section.Text main bold>
                   $9.99 and under
                 </Section.Text>
                 <Section.Text>
@@ -170,8 +172,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/sonic-games/585x420_Template_CuratedListPromo_v02.jpg"
             >
               <Section half>
-                <Section.Text title>Gotta go fast with</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Gotta go fast with</Section.Text>
+                <Section.Text main bold>
                   Sonic
                 </Section.Text>
                 <Section.Text>
@@ -184,8 +186,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/rpg-games/585x420_RPGs_7_2019_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Great Role-playing</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Great Role-playing</Section.Text>
+                <Section.Text main bold>
                   Games
                 </Section.Text>
                 <Section.Text>Epic quests await in these RPGs.</Section.Text>
@@ -196,8 +198,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/cta-tile/game/dspWLLXJS0vaqXej69iGZFORlSAGwYF1.jpg"
             >
               <Section half>
-                <Section.Text title>Jump for joy with</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Jump for joy with</Section.Text>
+                <Section.Text main bold>
                   Super Mario
                 </Section.Text>
                 <Section.Text>
@@ -211,8 +213,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/games-with-dlc/585x420_DLC_7_2019_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Games with</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Games with</Section.Text>
+                <Section.Text main bold>
                   DLC
                 </Section.Text>
                 <Section.Text>
@@ -225,8 +227,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/games-with-demos/585x420_Demos_7_2019_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Games with</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Games with</Section.Text>
+                <Section.Text main bold>
                   Demos
                 </Section.Text>
                 <Section.Text>
@@ -239,8 +241,8 @@ function App() {
               backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/switch/games-to-spark-creativity/585x420_CreativeGames_CuratedListPromo_v01.jpg"
             >
               <Section half>
-                <Section.Text title>Games to Spark</Section.Text>
-                <Section.Text title bold>
+                <Section.Text main>Games to Spark</Section.Text>
+                <Section.Text main bold>
                   Creativity
                 </Section.Text>
                 <Section.Text>
@@ -256,8 +258,8 @@ function App() {
             backgroundImage="https://www.nintendo.com/content/dam/noa/en_US/merchandising/curated-list/game/all-games/1440x420_MK8_CuratedLanding_v01.jpg"
           >
             <Section full>
-              <Section.Text title>Nintendo Switch</Section.Text>
-              <Section.Text title bold>
+              <Section.Text main>Nintendo Switch</Section.Text>
+              <Section.Text main bold>
                 Games
               </Section.Text>
               <Section.Text>

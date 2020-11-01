@@ -22,9 +22,9 @@ const StyledContainer = styled.div`
 const StyledText = styled.p`
   margin-top: 1em;
 
-  // title
+  // main
   ${(props) =>
-    props.title &&
+    props.main &&
     css`
       font-size: 3em;
       font-weight: 300;
