@@ -44,7 +44,7 @@ const Scalable = ({
   return (
     <StyledContainer backgroundColor={backgroundColor}>
       <StyledBackground backgroundImage={backgroundImage} />
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         <StyledMain>{children}</StyledMain>
       </a>
     </StyledContainer>
